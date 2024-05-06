@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer_name": {
+      "type": "string"
+    },
+    "customer_phone": {
+      "type": "string"
+    },
+    "customer_email": {
+      "type": "email"
+    },
+    "order_notes": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Completed",
+        "Pending"
+      ],
+      "default": "Pending",
+      "private": true
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "service_name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "package_type": {
+      "type": "string"
+    }
+  }
+}
